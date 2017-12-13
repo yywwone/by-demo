@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>季报</title>
+
+  <!-- Bootstrap -->
+  <link href="./bootstrap.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <style>
+    div[class^='col'] {
+      height: 50px;
+      /*background-color: pink;*/
+      line-height: 50px;
+      text-align: center;
+      box-shadow: 0 0 1px #000;
+      font-size: 8px;
+    }
+    input {
+    	border: none;
+    	height: 40px;
+    	width: 100%;
+    }
+    input:focus{outline: none;}
+    
+  </style>
+</head>
+
+<body>
+  <!-- 栅格系统把各种各样的屏幕分成了四类
+    1. 手机   col-xs-*  * 代表几列 *最大是12
+    2. 平板   col-sm-* 
+    3.  普通屏幕 col-md-*
+    4.  超大屏幕  col-lg-*
+  -->
+  <form action="">
+  	<div class="row">
+      <div class="col-md-12">2017年绿谷信息产业园企业主要指标季报表</div>
+  </div>
+
+	<div class="row">
+      <div class="col-xs-2 col-md-2">日期</div>
+      <div class="col-xs-2 col-md-2">
+      	<input type="text">
+      </div>
+      <div class="col-xs-2 col-md-2">填表人</div>
+      <div class="col-xs-2 col-md-2">
+      	<input type="text">
+      </div>
+      <div class="col-xs-2 col-md-2">联系电话</div>
+      <div class="col-xs-2 col-md-2">
+      	<input type="text">
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-xs-2 col-md-2">企业名称</div>
+      <div class="col-xs-3 col-md-3">
+        <input type="text">
+      </div>
+      <div class="col-xs-2 col-md-2">法定代表人</div>
+      <div class="col-xs-3 col-md-3">
+        <input type="text">
+      </div>
+  </div>
+  </form>
+
+<!--   <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-1 col-md-1">1</div>
+      <div class="col-xs-1 col-md-1">1</div>
+      <div class="col-xs-1 col-md-1">1</div>
+      <div class="col-xs-1 col-md-1">1</div>
+      <div class="col-xs-1 col-md-1">1</div>
+      <div class="col-xs-1 col-md-1">1</div>
+      <div class="col-xs-1 col-md-1">1</div>
+      <div class="col-xs-1 col-md-1">1</div>
+      <div class="col-xs-1 col-md-1">1</div>
+      <div class="col-xs-1 col-md-1">1</div>
+      <div class="col-xs-1 col-md-1">1</div>
+      <div class="col-xs-1 col-md-1">1</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 col-md-2">2</div>
+      <div class="col-xs-4 col-md-2">2</div>
+      <div class="col-xs-4 col-md-2">2</div>
+      <div class="col-xs-4 col-md-2">2</div>
+      <div class="col-xs-4 col-md-2">2</div>
+      <div class="col-xs-4 col-md-2">2</div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-4 col-md-3">3</div>
+      <div class="col-xs-4 col-md-3">3</div>
+      <div class="col-xs-4 col-md-3">3</div>
+      <div class="col-xs-12 col-md-3">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">4</div>
+      <div class="col-md-4">4</div>
+      <div class="col-md-4">4</div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">6</div>
+      <div class="col-md-6">6</div>
+
+    </div>
+    
+    <div class="row">
+      <div class="col-md-7">7</div>
+      <div class="col-md-6">6</div>
+    </div>
+
+
+    <!-- 列偏移  .col-*(xs,sm,md.lg)-offset-*  向右偏移-->
+    <!-- <div class="row">
+      <div class="col-md-4">4</div>
+      <div class="col-md-4 col-md-offset-4">4</div>
+    </div> -->
+
+    <!-- 列嵌套   -->
+    <!-- <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="col-md-6">6</div>
+        <div class="col-md-6">6</div>
+      </div>
+    </div> -->
+
+    <!-- 列顺序  push:推  pull:拉-->
+  <!--   <div class="row">
+        <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+        <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+      </div>
+  </div> -->
+
+
+
+  <script src="./jQuery.min.js"></script>
+  <script src="./bootstrap.min.js"></script>
+</body>
+
+</html>
