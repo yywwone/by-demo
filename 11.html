@@ -1,0 +1,92 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+
+
+<script type="text/javascript">
+function change() {	
+var obj = document.getElementById("upload");
+var len = obj.files.length;
+for (var i = 0; i < len; i++) {
+var temp = obj.files[i].name;
+console.log(temp);
+}
+}
+</script>
+
+
+</head>
+
+<body>
+<input id="upload" onchange="change();" type="file" value="点击上传图片" multiple="multiple" />
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<!-- 	
+<div id="divA"><input tpye="text" ></div>
+<div id="divB"><input tpye="text" ></div>
+ 
+<script language="javascript">
+$(function(){
+    $("#divA>input").focus();
+});
+$(document).keydown(function(event){
+    if (event.keyCode == 40) {
+        $("#divB>input").focus();
+        return false;
+    }
+    if (event.keyCode == 38) {
+        $("#divA>input").focus();
+        return false;
+    }
+});
+</script> -->
+
+<!-- <input type="text" id="tt"/>
+<input type="text" id="un"/>
+<input type="button" value="Try" id="bt"/>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#bt").click(function(){
+        var text="Text for insert";
+        $("#un").focus().val(text);
+    });
+});
+</script>
+ -->
+
+
+<script>
+	// 定位div(contenteditable = "true")，上传图片后，光标移到输入框后面
+function po_Last_Div(obj) {
+    if (window.getSelection) {//ie11 10 9 ff safari
+        obj.focus(); //解决ff不获取焦点无法定位问题
+        var range = window.getSelection();//创建range
+        range.selectAllChildren(obj);//range 选择obj下所有子内容
+        range.collapseToEnd();//光标移至最后
+    }
+    else if (document.selection) {//ie10 9 8 7 6 5
+        var range = document.selection.createRange();//创建选择对象
+        //var range = document.body.createTextRange();
+        range.moveToElementText(obj);//range定位到obj
+        range.collapse(false);//光标移至最后
+        range.select();
+    }
+};
+</script>
+</body>
+</html>
